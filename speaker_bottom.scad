@@ -1,5 +1,5 @@
 //speaker bottom.scad
-include <test01_1.scad>;
+include <speaker_walls.scad>;
 $fn = 64;
 
 translate([0, 0, 150/2+10/4-4])
@@ -14,6 +14,6 @@ module bottom() {
 difference () {
     cylinder(d=90, h=10, center=true);
     translate([0, 0, 150/2+10/4-4])
-    walls(thickness=6.5);
+    walls(thickness=12);
     }
 }
